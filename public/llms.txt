@@ -1,0 +1,26 @@
+# Noxstone - Lawn & Landscape
+
+Noxstone is a lawn and landscape maintenance company serving Pottawatomie County, Oklahoma, including Shawnee, Tecumseh, McLoud, Bethel Acres, Dale, and nearby communities.
+
+## Core Services
+
+- Lawn Maintenance: mowing, edging, string trimming, blow-off, mowing pattern variation, and weekly or bi-weekly route-based service.
+- Landscape Maintenance: shrub trimming, bed weeding, weed-control treatment, mulch refresh, bed edging, light pruning, and seasonal bed resets.
+- Property Cleanup: leaf cleanup, seasonal cleanups, storm debris pickup, overgrowth cleanup, bed clean-out, and hard-surface blow-down.
+
+## Important URLs
+
+- Home: https://noxstone.com/
+- Services: https://noxstone.com/services
+- Lawn Maintenance: https://noxstone.com/services/lawn-maintenance
+- Landscape Maintenance: https://noxstone.com/services/landscape-maintenance
+- Property Cleanup: https://noxstone.com/services/property-cleanup
+- Contact and quote requests: https://noxstone.com/contact
+- Service agreement: https://noxstone.com/service-agreement
+- Sitemap: https://noxstone.com/sitemap.xml
+
+## Contact
+
+- Phone: +1-405-888-8277
+- Email: mail@noxstone.com
+- Service area: Pottawatomie County, Oklahoma

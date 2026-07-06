@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noxstone.com/sitemap.xml
+# AI-readable site summary: https://noxstone.com/llms.txt
