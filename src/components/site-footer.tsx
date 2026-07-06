@@ -2,9 +2,6 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 const LOGO_URL = "/noxstone-icon-logo.png";
 
-const CLIENT_LOGIN_URL =
-  "https://clienthub.getjobber.com/client_hubs/407dd587-a4ef-41b0-8650-1cb1a30bc552/login/new?source=share_login";
-
 export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--hairline)] bg-surface-elevated">
@@ -42,16 +39,6 @@ export function SiteFooter() {
               <li>
                 <a href="/contact" className="hover:text-primary">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href={CLIENT_LOGIN_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary"
-                >
-                  Client Login
                 </a>
               </li>
               <li>

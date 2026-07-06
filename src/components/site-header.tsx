@@ -2,7 +2,6 @@ import {
   Home,
   Briefcase,
   Mail,
-  LogIn,
   Menu,
   Sparkles,
   Scissors,
@@ -16,9 +15,6 @@ import { ThemeToggle } from "./theme-toggle";
 
 const LOGO_URL = "/noxstone-icon-logo.png";
 
-const CLIENT_LOGIN_URL =
-  "https://clienthub.getjobber.com/client_hubs/407dd587-a4ef-41b0-8650-1cb1a30bc552/login/new?source=share_login";
-
 const serviceItems = [
   { to: "/services/lawn-maintenance", label: "Lawn Maintenance", icon: Scissors },
   { to: "/services/landscape-maintenance", label: "Landscape Maintenance", icon: Trees },
@@ -29,7 +25,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const pathname = typeof window === "undefined" ? "/" : window.location.pathname;
   const promoText =
-    "New customers can sign up before June 30th to receive 50% off their second recurring service!";
+    "New customers can sign up before July 30th to receive 50% off their second recurring service!";
   const navClass = (href: string, exact = false) => {
     const isActive = exact
       ? pathname === href
@@ -109,16 +105,6 @@ export function SiteHeader() {
           <a href="/contact" className={navClass("/contact")}>
             <Mail className="h-4 w-4" />
             Contact
-          </a>
-
-          <a
-            href={CLIENT_LOGIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
-          >
-            <LogIn className="h-4 w-4" />
-            Client Login
           </a>
         </nav>
 
@@ -207,15 +193,6 @@ export function SiteHeader() {
               >
                 <Mail className="h-5 w-5 text-primary" />
                 Contact
-              </a>
-              <a
-                href={CLIENT_LOGIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 rounded-lg px-3 py-3 text-base font-medium hover:bg-accent"
-              >
-                <LogIn className="h-5 w-5 text-primary" />
-                Client Login
               </a>
               <a
                 href="/contact"
