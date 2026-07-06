@@ -2,13 +2,35 @@
 
 This site is a static Vite SPA deployed to **Cloudflare Pages**. The contact form submits to a **Cloudflare Pages Function** at `/api/contact`, which proxies leads to Matrix at `https://matrixhq.app/api/public/leads`.
 
+## GitHub repository
+
+The project is committed on the `main` branch. To create the remote repo and push:
+
+```bash
+gh auth login
+gh repo create noxstone/website --public --source=. --remote=origin --push
+```
+
+If `noxstone/website` is taken or you use a different org, pick another name:
+
+```bash
+gh repo create YOUR_ORG/noxstone-website --public --source=. --remote=origin --push
+```
+
+Without the GitHub CLI, create an empty repo in the GitHub UI, then:
+
+```bash
+git remote add origin git@github.com:YOUR_ORG/noxstone-website.git
+git push -u origin main
+```
+
 ## Local development
 
 ### Frontend only
 
 ```bash
-bun install
-bun run dev
+npm install
+npm run dev
 ```
 
 Vite serves the React app at `http://localhost:5173`. The contact form will not work without the Pages Function running.
@@ -24,8 +46,8 @@ cp .env.example .dev.vars
 2. Build and start the Pages dev server:
 
 ```bash
-bun run build
-bun run pages:dev
+npm run build
+npm run pages:dev
 ```
 
 3. Open the URL shown by Wrangler (usually `http://localhost:8788`), go to `/contact`, and submit a test lead. Confirm it appears in Matrix under the `noxstone` organization.
@@ -53,7 +75,7 @@ Never expose these in client-side code or `VITE_` / `PUBLIC_` prefixed variables
 | Setting | Value |
 |---------|-------|
 | Framework preset | None |
-| Build command | `bun run build` |
+| Build command | `npm run build` |
 | Build output directory | `dist/client` |
 | Root directory | `/` |
 
