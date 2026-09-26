@@ -25,7 +25,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const pathname = typeof window === "undefined" ? "/" : window.location.pathname;
   const promoText =
-    "New customers can sign up before July 30th to receive 50% off their second recurring service!";
+    "Christmas light installation is now booking for the holiday season. Request a quote to reserve your spot!";
   const navClass = (href: string, exact = false) => {
     const isActive = exact
       ? pathname === href
